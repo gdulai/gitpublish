@@ -25,13 +25,16 @@ public class GitRepository implements Serializable {
         this.password = password;
     }
 
-    public GitRepositoryManager createGitRepository() throws MalformedURLException {
+    public GitRepositoryManager createGitRepository(String tempDirectoryPath) throws MalformedURLException {
+        GitRepositoryManager repositoryManager = new GitRepositoryManager(projectName, url, tempDirectoryPath);
+
         if (username == null || password == null)
-            return new GitRepositoryManager(projectName, url);
+            return repositoryManager;
 
         GitCredentialsBuilder credentialsBuilder = new GitCredentialsBuilder(username, password);
 
-        return new GitRepositoryManager(projectName, url, credentialsBuilder);
+        return repositoryManager
+                .credentials(credentialsBuilder);
     }
 
     public String getProjectName() {

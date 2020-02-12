@@ -6,9 +6,9 @@ plugins {
 }
 
 group 'hu.gdulai'
-version '1.0-SNAPSHOT'
+version '0.1'
 
-sourceCompatibility = 1.8
+sourceCompatibility = '11'
 
 repositories {
     mavenLocal()
@@ -24,7 +24,6 @@ dependencies {
 
 def pluginId = 'gitpublish'
 def implClass = 'hu.gdulai.gitpublish.GitPublishPlugin'
-def githubUrl = 'https://github.com/username/repo'
 
 gradlePlugin {
     plugins {
@@ -38,7 +37,7 @@ gradlePlugin {
 publishing {
     repositories {
         maven {
-                url '/home/gdulai/.m2/repository'
+            url mavenLocalRepo
         }
     }
 }

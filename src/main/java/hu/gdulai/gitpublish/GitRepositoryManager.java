@@ -21,17 +21,9 @@ public class GitRepositoryManager {
     private final String url;
     private GitCredentialsBuilder credentials;
 
-    GitRepositoryManager(final String projectName, final String url, final GitCredentialsBuilder credentials)
-            throws MalformedURLException {
+    GitRepositoryManager(final String projectName, final String url, String localPath) {
         this.projectName = projectName;
-        this.local = new File("/home/gdulai/tmpBuild/" + projectName);
-        this.url = url;
-        this.credentials = credentials;
-    }
-
-    GitRepositoryManager(final String projectName, final String url) {
-        this.projectName = projectName;
-        this.local = new File("/home/gdulai/tmpBuild/" + projectName);
+        this.local = new File(localPath + projectName);
         this.url = url;
     }
 
@@ -51,12 +43,17 @@ public class GitRepositoryManager {
     }
 
     private File pullRepository() throws IOException, GitAPIException {
-
         PullCommand pullCmd = credentials != null ? Git.open(local).pull().setCredentialsProvider(this.credentials.buildCredProvider())
                 : Git.open(local).pull();
 
         pullCmd.call();
 
         return local;
+    }
+
+    GitRepositoryManager credentials(GitCredentialsBuilder credentials) {
+        this.credentials = credentials;
+
+        return this;
     }
 }

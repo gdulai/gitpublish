@@ -25,7 +25,9 @@ public class GitPublishPlugin implements Plugin<Project> {
                     try {
                         Arrays.stream(extension.repositories).forEach(gitRepository -> {
                             try {
-                                GradleProject gradleProject = gitRepository.createGitRepository().acquire();
+                                GradleProject gradleProject = gitRepository
+                                        .createGitRepository(extension.getTempDirectoryPath())
+                                        .acquire();
 
                                 gradleProject.publish();
 
@@ -42,7 +44,17 @@ public class GitPublishPlugin implements Plugin<Project> {
     }
 
     public static class GitPublishPluginExtension {
+        private String tempDirectoryPath;
+
         private GitRepository[] repositories;
+
+        public String getTempDirectoryPath() {
+            return tempDirectoryPath;
+        }
+
+        public void setTempDirectoryPath(String tempDirectoryPath) {
+            this.tempDirectoryPath = tempDirectoryPath;
+        }
 
         public GitRepository[] getRepositories() {
             return repositories;
