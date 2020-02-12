@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>hu.gdulai</groupId>
+  <artifactId>GitPublish</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20200208123938</lastUpdated>
+  </versioning>
+</metadata>

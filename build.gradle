@@ -1,0 +1,45 @@
+plugins {
+    id "com.gradle.plugin-publish" version "0.10.1"
+    id 'maven-publish'
+    id 'java-gradle-plugin'
+    id 'java'
+}
+
+group 'hu.gdulai'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '5.6.0.201912101111-r'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+def pluginId = 'gitpublish'
+def implClass = 'hu.gdulai.gitpublish.GitPublishPlugin'
+def githubUrl = 'https://github.com/username/repo'
+
+gradlePlugin {
+    plugins {
+        gitPublishPlugin {
+            id = pluginId
+            implementationClass = implClass
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven {
+                url '/home/gdulai/.m2/repository'
+        }
+    }
+}
+

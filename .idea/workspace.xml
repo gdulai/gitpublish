@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f49709df-6594-4390-8bcc-7105c5c90be9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gitpublish" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gitpublish" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gitpublish" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XWPH5uopxg5D70qp4g4WTFJhzq" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitPublishTest" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.GitPublish [publish]">
+    <configuration name="GitPublish [publishMavenPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishMavenPublicationToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GitPublish [publishPluginMavenPublicationToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPluginMavenPublicationToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GitPublish [publishPlugins]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishPlugins" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GitPublish [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GitPublish [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.GitPublish [publish]" />
+        <item itemvalue="Gradle.GitPublish [publishPlugins]" />
+        <item itemvalue="Gradle.GitPublish [publishMavenPublicationToMavenLocal]" />
+        <item itemvalue="Gradle.GitPublish [publishPluginMavenPublicationToMavenLocal]" />
+        <item itemvalue="Gradle.GitPublish [publishToMavenLocal]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f49709df-6594-4390-8bcc-7105c5c90be9" name="Default Changelist" comment="" />
+      <created>1581158786550</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581158786550</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser" timestamp="1581245367446">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581159475452" />
+    <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581245367446" />
+    <state x="2766" y="344" width="424" height="487" key="FileChooserDialogImpl" timestamp="1581364485205">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2766" y="344" key="FileChooserDialogImpl/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581244983997" />
+    <state x="2766" y="344" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581364485205" />
+    <state width="1438" height="273" key="GridCell.Tab.0.bottom" timestamp="1581536730872">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
+    <state width="1350" height="251" key="GridCell.Tab.0.bottom/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043482" />
+    <state width="1438" height="273" key="GridCell.Tab.0.bottom/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
+    <state width="1438" height="273" key="GridCell.Tab.0.center" timestamp="1581536730872">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
+    <state width="1350" height="251" key="GridCell.Tab.0.center/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043481" />
+    <state width="1438" height="273" key="GridCell.Tab.0.center/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
+    <state width="1438" height="273" key="GridCell.Tab.0.left" timestamp="1581536730872">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
+    <state width="1350" height="251" key="GridCell.Tab.0.left/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043480" />
+    <state width="1438" height="273" key="GridCell.Tab.0.left/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
+    <state width="1438" height="273" key="GridCell.Tab.0.right" timestamp="1581536730872">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
+    <state width="1350" height="251" key="GridCell.Tab.0.right/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043482" />
+    <state width="1438" height="273" key="GridCell.Tab.0.right/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
+    <state x="2539" y="139" width="992" height="733" key="SettingsEditor" timestamp="1581365088093">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2539" y="139" key="SettingsEditor/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248039931" />
+    <state x="2539" y="139" width="992" height="733" key="SettingsEditor/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581365088093" />
+    <state x="464" y="158" width="992" height="733" key="SettingsEditor/0.30.1920.995@0.30.1920.995" timestamp="1581198746008" />
+    <state x="2446" y="271" width="690" height="524" key="StructurePopup" timestamp="1581536244889">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2446" y="271" width="690" height="524" key="StructurePopup/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536244889" />
+    <state x="2791" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1581533458525">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="653" y="353" key="com.intellij.ide.util.TipDialog/0.28.1920.994/1920.0.2560.1080@0.28.1920.994" timestamp="1581244968988" />
+    <state x="653" y="355" key="com.intellij.ide.util.TipDialog/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@0.30.1920.995" timestamp="1581364389215" />
+    <state x="2791" y="353" key="com.intellij.ide.util.TipDialog/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581533458525" />
+    <state x="653" y="355" key="com.intellij.ide.util.TipDialog/0.30.1920.995@0.30.1920.995" timestamp="1581198670266" />
+    <state x="2534" y="161" width="645" height="807" key="find.popup" timestamp="1581245369362">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2534" y="161" width="645" height="807" key="find.popup/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581245369362" />
+    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581535009717">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581163378820" />
+    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581535009717" />
+  </component>
+</project>
