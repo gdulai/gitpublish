@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f49709df-6594-4390-8bcc-7105c5c90be9" name="Default Changelist" comment="" />
+    <list default="true" id="f49709df-6594-4390-8bcc-7105c5c90be9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitCredentialsBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitCredentialsBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitPublishPlugin$GitPublishPluginExtension.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitPublishPlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GitRepositoryManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GradleProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/GradleProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/Repositories.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hu/gdulai/gitpublish/Repositories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/gitpublish-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/gitpublish-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/publications/gitPublishPluginPluginMarkerMaven/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/publications/gitPublishPluginPluginMarkerMaven/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/publications/pluginMaven/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/publications/pluginMaven/pom-default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/1.0-SNAPSHOT/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/1.0-SNAPSHOT/maven-metadata-remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/1.0-SNAPSHOT/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/1.0-SNAPSHOT/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/maven-metadata-remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishGitPublishPluginPluginMarkerMavenPublicationToMavenRepository/gitpublish/gitpublish.gradle.plugin/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/1.0-SNAPSHOT/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/1.0-SNAPSHOT/maven-metadata-remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/1.0-SNAPSHOT/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/1.0-SNAPSHOT/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/maven-metadata-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/maven-metadata-remote.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/resolver-status.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/publishPluginMavenPublicationToMavenRepository/hu/gdulai/gitpublish/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitPublishPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitPublishPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitRepositoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hu/gdulai/gitpublish/GitRepositoryManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,14 +85,22 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XWPH5uopxg5D70qp4g4WTFJhzq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitPublishTest" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -189,40 +232,53 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser" timestamp="1581245367446">
+    <state x="2381" y="194" width="945" height="677" key="#Project_Structure" timestamp="1581540906764">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2381" y="194" width="945" height="677" key="#Project_Structure/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540906764" />
+    <state x="3089" y="261" width="374" height="629" key="#com.intellij.ide.util.MemberChooser" timestamp="1581540114020">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581159475452" />
     <state x="3089" y="261" key="#com.intellij.ide.util.MemberChooser/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581245367446" />
+    <state x="3089" y="261" width="374" height="629" key="#com.intellij.ide.util.MemberChooser/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540114020" />
+    <state x="2339" y="127" width="1564" height="885" key="CommitChangelistDialog2" timestamp="1581540783549">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2339" y="127" width="1564" height="885" key="CommitChangelistDialog2/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540783549" />
+    <state x="2348" y="156" width="1536" height="829" key="DiffContextDialog" timestamp="1581540751595">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2348" y="156" width="1536" height="829" key="DiffContextDialog/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540751595" />
     <state x="2766" y="344" width="424" height="487" key="FileChooserDialogImpl" timestamp="1581364485205">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="2766" y="344" key="FileChooserDialogImpl/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581244983997" />
     <state x="2766" y="344" width="424" height="487" key="FileChooserDialogImpl/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581364485205" />
-    <state width="1438" height="273" key="GridCell.Tab.0.bottom" timestamp="1581536730872">
+    <state width="1572" height="279" key="GridCell.Tab.0.bottom" timestamp="1581540599004">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
     <state width="1350" height="251" key="GridCell.Tab.0.bottom/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043482" />
-    <state width="1438" height="273" key="GridCell.Tab.0.bottom/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
-    <state width="1438" height="273" key="GridCell.Tab.0.center" timestamp="1581536730872">
+    <state width="1572" height="279" key="GridCell.Tab.0.bottom/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540599004" />
+    <state width="1572" height="279" key="GridCell.Tab.0.center" timestamp="1581540599004">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.center/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
     <state width="1350" height="251" key="GridCell.Tab.0.center/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043481" />
-    <state width="1438" height="273" key="GridCell.Tab.0.center/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
-    <state width="1438" height="273" key="GridCell.Tab.0.left" timestamp="1581536730872">
+    <state width="1572" height="279" key="GridCell.Tab.0.center/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540599004" />
+    <state width="1572" height="279" key="GridCell.Tab.0.left" timestamp="1581540599004">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.left/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
     <state width="1350" height="251" key="GridCell.Tab.0.left/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043480" />
-    <state width="1438" height="273" key="GridCell.Tab.0.left/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
-    <state width="1438" height="273" key="GridCell.Tab.0.right" timestamp="1581536730872">
+    <state width="1572" height="279" key="GridCell.Tab.0.left/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540599004" />
+    <state width="1572" height="279" key="GridCell.Tab.0.right" timestamp="1581540599004">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state width="1899" height="285" key="GridCell.Tab.0.right/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581165639870" />
     <state width="1350" height="251" key="GridCell.Tab.0.right/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581248043482" />
-    <state width="1438" height="273" key="GridCell.Tab.0.right/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536730872" />
+    <state width="1572" height="279" key="GridCell.Tab.0.right/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540599004" />
     <state x="2539" y="139" width="992" height="733" key="SettingsEditor" timestamp="1581365088093">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
@@ -233,6 +289,10 @@
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="2446" y="271" width="690" height="524" key="StructurePopup/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581536244889" />
+    <state x="2390" y="268" width="800" height="531" key="Vcs.Push.Dialog.v2" timestamp="1581540784952">
+      <screen x="1920" y="0" width="2560" height="1080" />
+    </state>
+    <state x="2390" y="268" width="800" height="531" key="Vcs.Push.Dialog.v2/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540784952" />
     <state x="2791" y="353" key="com.intellij.ide.util.TipDialog" timestamp="1581533458525">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
@@ -244,10 +304,10 @@
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="2534" y="161" width="645" height="807" key="find.popup/0.28.1920.994/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581245369362" />
-    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581535009717">
+    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1581540529887">
       <screen x="1920" y="0" width="2560" height="1080" />
     </state>
     <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup/0.26.1920.989/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581163378820" />
-    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581535009717" />
+    <state x="2957" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.995/4480.0.1920.1080/1920.0.2560.1080@1920.0.2560.1080" timestamp="1581540529887" />
   </component>
 </project>
