@@ -1,5 +1,8 @@
 package hu.gdulai.gitpublish;
 
+import hu.gdulai.gitpublish.git.GitRepository;
+import hu.gdulai.gitpublish.project.BuildSystemProject;
+import hu.gdulai.gitpublish.project.gradle.GradleProject;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
@@ -25,11 +28,11 @@ public class GitPublishPlugin implements Plugin<Project> {
                     try {
                         Arrays.stream(extension.repositories).forEach(gitRepository -> {
                             try {
-                                GradleProject gradleProject = gitRepository
+                                BuildSystemProject projectFromRepo = gitRepository
                                         .createGitRepository(extension.getTempDirectoryPath())
                                         .acquire();
 
-                                gradleProject.publish();
+                                projectFromRepo.build();
 
                             } catch (GitAPIException | IOException e) {
                                 e.printStackTrace();
@@ -38,7 +41,6 @@ public class GitPublishPlugin implements Plugin<Project> {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
                 }
         );
     }

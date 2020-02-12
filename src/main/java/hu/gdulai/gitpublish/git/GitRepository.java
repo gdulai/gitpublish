@@ -1,4 +1,6 @@
-package hu.gdulai.gitpublish;
+package hu.gdulai.gitpublish.git;
+
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 import java.io.Serializable;
 import java.net.MalformedURLException;
@@ -31,10 +33,10 @@ public class GitRepository implements Serializable {
         if (username == null || password == null)
             return repositoryManager;
 
-        GitCredentialsBuilder credentialsBuilder = new GitCredentialsBuilder(username, password);
+        UsernamePasswordCredentialsProvider credentials = new UsernamePasswordCredentialsProvider(username, password);
 
         return repositoryManager
-                .credentials(credentialsBuilder);
+                .setCredentials(credentials);
     }
 
     public String getProjectName() {
