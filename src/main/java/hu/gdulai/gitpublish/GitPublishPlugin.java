@@ -1,8 +1,6 @@
 package hu.gdulai.gitpublish;
 
-import hu.gdulai.gitpublish.git.GitRepository;
 import hu.gdulai.gitpublish.project.BuildSystemProject;
-import hu.gdulai.gitpublish.project.gradle.GradleProject;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
@@ -20,16 +18,21 @@ public class GitPublishPlugin implements Plugin<Project> {
     public void apply(Project project) {
         File projectDir = project.getProjectDir();
 
-        GitPublishPluginExtension extension = project
+        GitPublishExtension extension = project
                 .getExtensions()
-                .create("gitPublish", GitPublishPluginExtension.class);
+                .create("gitPublish", GitPublishExtension.class);
 
         project.task("gitPublishToMavenLocal").doLast(action -> {
                     try {
-                        Arrays.stream(extension.repositories).forEach(gitRepository -> {
+                        Arrays.stream(extension.getRepositories()).forEach(gitRepository -> {
                             try {
+                                String tempDirectoryPath = extension.getTempDirectoryPath();
+
+                                String buildDirPath = tempDirectoryPath != null ? tempDirectoryPath :
+                                        projectDir.toPath().toString() + "/.gitPublishTemp/";
+
                                 BuildSystemProject projectFromRepo = gitRepository
-                                        .createGitRepository(extension.getTempDirectoryPath())
+                                        .createGitRepository(buildDirPath)
                                         .acquire();
 
                                 projectFromRepo.build();
@@ -45,25 +48,4 @@ public class GitPublishPlugin implements Plugin<Project> {
         );
     }
 
-    public static class GitPublishPluginExtension {
-        private String tempDirectoryPath;
-
-        private GitRepository[] repositories;
-
-        public String getTempDirectoryPath() {
-            return tempDirectoryPath;
-        }
-
-        public void setTempDirectoryPath(String tempDirectoryPath) {
-            this.tempDirectoryPath = tempDirectoryPath;
-        }
-
-        public GitRepository[] getRepositories() {
-            return repositories;
-        }
-
-        public void setRepositories(GitRepository[] repositories) {
-            this.repositories = repositories;
-        }
-    }
 }

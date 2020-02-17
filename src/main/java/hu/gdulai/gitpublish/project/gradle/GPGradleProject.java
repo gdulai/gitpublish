@@ -1,5 +1,6 @@
 package hu.gdulai.gitpublish.project.gradle;
 
+import hu.gdulai.gitpublish.git.GitRepositoryManager;
 import hu.gdulai.gitpublish.project.BuildSystemProject;
 import org.gradle.tooling.BuildLauncher;
 import org.gradle.tooling.GradleConnector;
@@ -10,14 +11,13 @@ import java.io.File;
 /**
  * @author gdulai
  */
-public class GradleProject implements BuildSystemProject {
-
-    private final String projectName;
+public class GPGradleProject implements BuildSystemProject {
     private final File projectDir;
+    private final GitRepositoryManager repositoryManager;
 
-    public GradleProject(String projectName, File projectDir) {
-        this.projectName = projectName;
+    public GPGradleProject(File projectDir, GitRepositoryManager repositoryManager) {
         this.projectDir = projectDir;
+        this.repositoryManager = repositoryManager;
     }
 
     @Override
@@ -32,5 +32,7 @@ public class GradleProject implements BuildSystemProject {
         build.forTasks("clean", "build", "publishToMavenLocal").run();
 
         projectConnection.close();
+
+        projectDir.delete();
     }
 }

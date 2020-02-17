@@ -1,10 +1,7 @@
 package hu.gdulai.gitpublish.git;
 
-import java.io.File;
-import java.io.IOException;
-
 import hu.gdulai.gitpublish.project.BuildSystemProject;
-import hu.gdulai.gitpublish.project.gradle.GradleProject;
+import hu.gdulai.gitpublish.project.gradle.GPGradleProject;
 import org.eclipse.jgit.api.CloneCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.PullCommand;
@@ -12,10 +9,11 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.TransportException;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
-import org.gradle.internal.impldep.org.apache.http.auth.UsernamePasswordCredentials;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * @author gdulai
@@ -23,7 +21,7 @@ import javax.annotation.Nullable;
 public class GitRepositoryManager {
 
     private final String projectName;
-    private final File local;
+    private final File localCopy;
     private final String url;
 
     @Nullable
@@ -34,16 +32,20 @@ public class GitRepositoryManager {
             @Nonnull String url,
             @Nonnull String localPath) {
         this.projectName = projectName;
-        this.local = new File(localPath + projectName);
+        this.localCopy = new File(localPath + projectName);
         this.url = url;
     }
 
+    public final void removeLocalCopy() {
+        localCopy.delete();
+    }
+
     public final BuildSystemProject acquire() throws GitAPIException, IOException {
-        File projectDir = local.exists() ?
+        File projectDir = localCopy.exists() ?
                 pullRepository() :
                 cloneRepository();
 
-        return new GradleProject(projectName, projectDir);
+        return new GPGradleProject(projectDir, this);
     }
 
     private File cloneRepository() throws InvalidRemoteException, TransportException, GitAPIException {
@@ -51,21 +53,21 @@ public class GitRepositoryManager {
                 .setCredentialsProvider(credentials) : Git.cloneRepository();
 
         cloneCmd.setURI(url)
-                .setDirectory(local)
+                .setDirectory(localCopy)
                 .setBranch("master")
                 .call();
 
-        return local;
+        return localCopy;
     }
 
     private File pullRepository() throws IOException, GitAPIException {
         PullCommand pullCmd = credentials != null ?
-                Git.open(local).pull().setCredentialsProvider(credentials) :
-                Git.open(local).pull();
+                Git.open(localCopy).pull().setCredentialsProvider(credentials) :
+                Git.open(localCopy).pull();
 
         pullCmd.call();
 
-        return local;
+        return localCopy;
     }
 
     GitRepositoryManager setCredentials(UsernamePasswordCredentialsProvider credentials) {
