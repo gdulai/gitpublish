@@ -6,7 +6,7 @@ import hu.gdulai.gitpublish.git.GitRepository;
  * @author gdulai
  */
 public class GitPublishExtension {
-    private boolean shouldKeep = false;
+    private boolean shouldKeep;
     private String tempDirectoryPath;
     private GitRepository[] repositories;
 

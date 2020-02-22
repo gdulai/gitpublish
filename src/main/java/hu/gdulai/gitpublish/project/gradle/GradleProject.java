@@ -1,27 +1,26 @@
 package hu.gdulai.gitpublish.project.gradle;
 
-import hu.gdulai.gitpublish.git.GitRepositoryManager;
 import hu.gdulai.gitpublish.project.BuildSystemProject;
+import org.apache.commons.io.FileUtils;
 import org.gradle.tooling.BuildLauncher;
 import org.gradle.tooling.GradleConnector;
 import org.gradle.tooling.ProjectConnection;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * @author gdulai
  */
-public class GPGradleProject implements BuildSystemProject {
+public class GradleProject implements BuildSystemProject {
     private final File projectDir;
-    private final GitRepositoryManager repositoryManager;
 
-    public GPGradleProject(File projectDir, GitRepositoryManager repositoryManager) {
+    public GradleProject(File projectDir) {
         this.projectDir = projectDir;
-        this.repositoryManager = repositoryManager;
     }
 
     @Override
-    public void build() {
+    public void build(boolean shouldKeep) {
         GradleConnector connector = GradleConnector.newConnector();
 
         System.out.println("PROJECT DIR: " + projectDir);
@@ -33,6 +32,16 @@ public class GPGradleProject implements BuildSystemProject {
 
         projectConnection.close();
 
-        projectDir.delete();
+        try {
+            if (!shouldKeep) {
+                deleteProject();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteProject() throws IOException {
+        FileUtils.deleteDirectory(projectDir);
     }
 }

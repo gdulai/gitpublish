@@ -23,27 +23,23 @@ public class GitPublishPlugin implements Plugin<Project> {
                 .create("gitPublish", GitPublishExtension.class);
 
         project.task("gitPublishToMavenLocal").doLast(action -> {
-                    try {
-                        Arrays.stream(extension.getRepositories()).forEach(gitRepository -> {
-                            try {
-                                String tempDirectoryPath = extension.getTempDirectoryPath();
+                    Arrays.stream(extension.getRepositories()).forEach(gitRepository -> {
+                        try {
+                            String tempDirectoryPath = extension.getTempDirectoryPath();
 
-                                String buildDirPath = tempDirectoryPath != null ? tempDirectoryPath :
-                                        projectDir.toPath().toString() + "/.gitPublishTemp/";
+                            String buildDirPath = tempDirectoryPath != null ? tempDirectoryPath :
+                                    projectDir.toPath().toString() + "/.gitPublishTemp/";
 
-                                BuildSystemProject projectFromRepo = gitRepository
-                                        .createGitRepository(buildDirPath)
-                                        .acquire();
+                            BuildSystemProject projectFromRepo = gitRepository
+                                    .createGitRepository(buildDirPath)
+                                    .acquire();
 
-                                projectFromRepo.build();
+                            projectFromRepo.build(extension.isShouldKeep());
 
-                            } catch (GitAPIException | IOException e) {
-                                e.printStackTrace();
-                            }
-                        });
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    });
                 }
         );
     }

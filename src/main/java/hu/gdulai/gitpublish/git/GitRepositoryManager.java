@@ -1,10 +1,13 @@
 package hu.gdulai.gitpublish.git;
 
 import hu.gdulai.gitpublish.project.BuildSystemProject;
-import hu.gdulai.gitpublish.project.gradle.GPGradleProject;
+import hu.gdulai.gitpublish.project.gradle.GradleProject;
+import hu.gdulai.gitpublish.project.maven.MavenProject;
+import org.apache.commons.io.FileUtils;
 import org.eclipse.jgit.api.CloneCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.PullCommand;
+import org.eclipse.jgit.api.TransportConfigCallback;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.TransportException;
@@ -45,7 +48,16 @@ public class GitRepositoryManager {
                 pullRepository() :
                 cloneRepository();
 
-        return new GPGradleProject(projectDir, this);
+        File pomXml = new File(projectDir.getPath() + "/pom.xml");
+        File buildGradle = new File(projectDir.getPath() + "/build.settings");
+
+        if (pomXml.exists()) {
+            return new MavenProject(projectDir);
+        } else if (buildGradle.exists()) {
+            return new GradleProject(projectDir);
+        }
+
+        return new GradleProject(projectDir);
     }
 
     private File cloneRepository() throws InvalidRemoteException, TransportException, GitAPIException {
