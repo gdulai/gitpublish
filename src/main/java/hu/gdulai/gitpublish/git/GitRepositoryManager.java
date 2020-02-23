@@ -43,7 +43,7 @@ public class GitRepositoryManager {
         localCopy.delete();
     }
 
-    public final BuildSystemProject acquire() throws GitAPIException, IOException {
+    public final BuildSystemProject acquire() throws Exception {
         File projectDir = localCopy.exists() ?
                 pullRepository() :
                 cloneRepository();
@@ -57,7 +57,7 @@ public class GitRepositoryManager {
             return new GradleProject(projectDir);
         }
 
-        return new GradleProject(projectDir);
+        throw new Exception("Could not determine project type!");
     }
 
     private File cloneRepository() throws InvalidRemoteException, TransportException, GitAPIException {

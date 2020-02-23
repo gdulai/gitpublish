@@ -40,10 +40,15 @@ public class MavenProject implements BuildSystemProject {
         request.setJavaHome(javaHome);
         request.setGoals(List.of("clean", "install -DskipTests"));
 
-        File mavenHome = getMavenHome().orElseThrow(() -> new Exception("Could not find maven home!"));
-
         Invoker invoker = new DefaultInvoker();
-        invoker.setMavenHome(mavenHome);
+
+        if (hasMvnWrapper()) {
+            System.out.println("Using maven wrapper...");
+            invoker.setMavenExecutable(new File(projectDir + "/mvnw"));
+        } else {
+            File mavenHome = getMavenHome().orElseThrow(() -> new Exception("Could not find maven home!"));
+            invoker.setMavenHome(mavenHome);
+        }
 
         try {
             InvocationResult result = invoker.execute(request);
@@ -67,6 +72,10 @@ public class MavenProject implements BuildSystemProject {
         }
 
         return Optional.empty();
+    }
+
+    private boolean hasMvnWrapper() {
+        return new File(projectDir + "/mvnw").exists();
     }
 
     private Optional<File> getMavenHome() {
