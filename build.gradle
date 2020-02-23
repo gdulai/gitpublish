@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'hu.gdulai'
-version '0.1'
+version '1.0'
 
 sourceCompatibility = '11'
 
@@ -23,9 +23,11 @@ dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
 
-def pluginId = 'gitpublish'
+def pluginId = 'hu.gdulai.gitpublish'
 def implClass = 'hu.gdulai.gitpublish.GitPublishPlugin'
+def url = 'https://github.com/gdulai/gitpublish'
 
+/*
 gradlePlugin {
     plugins {
         gitPublishPlugin {
@@ -34,11 +36,38 @@ gradlePlugin {
         }
     }
 }
-
+*/
 publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId "$group"
+            artifactId pluginId
+            version "$version"
+            from components.java
+        }
+    }
+}
+uploadArchives {
     repositories {
-        maven {
-            url mavenLocalRepo
+        mavenLocal()
+    }
+}
+gradlePlugin {
+    plugins {
+        gitPublishPlugin {
+            id = pluginId
+            implementationClass = implClass
+            displayName = 'Git Publish'
+            description = 'Publish git repositories to maven local'
+        }
+    }
+}
+pluginBundle {
+    plugins {
+        gitPublishPlugin {
+            tags = ['gitpublish']
+            website = url
+            vcsUrl = url
         }
     }
 }
