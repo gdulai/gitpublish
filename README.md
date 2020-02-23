@@ -6,8 +6,6 @@ Clones and publishes project to a local maven repository.
 
 Set up mavenLocalRepo as a gradle property.
 
-##### Gradle property:
-    mavenLocalRepo=/home/gdulai/.m2/repository -> gradle.properties
 ##### Build script:
     gitPublish {
         shouldKeep = false                      //false=deletes project after build, true=keeps the project
