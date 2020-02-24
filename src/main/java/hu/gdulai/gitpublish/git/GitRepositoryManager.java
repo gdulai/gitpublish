@@ -49,7 +49,7 @@ public class GitRepositoryManager {
                 cloneRepository();
 
         File pomXml = new File(projectDir.getPath() + "/pom.xml");
-        File buildGradle = new File(projectDir.getPath() + "/build.settings");
+        File buildGradle = new File(projectDir.getPath() + "/build.gradle");
 
         if (pomXml.exists()) {
             return new MavenProject(projectDir);
