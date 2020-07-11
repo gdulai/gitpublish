@@ -11,7 +11,7 @@ import org.gradle.testkit.runner.GradleRunner;
 
 /** @author gdulai */
 public class TestSetup {
-  private final TemporaryFolder tempFolder; 
+  private final TemporaryFolder tempFolder;
   private final File buildGradle;
   private final File homeFolder;
   private final File m2Folder;
@@ -21,7 +21,7 @@ public class TestSetup {
     tempFolder = new TemporaryFolder();
     tempFolder.create();
 
-    buildGradle = new File(getClass().getClassLoader().getResource(
+    buildGradle = new File(getClass().getClassLoader().getResource(buildGradleFileName).getFile());
     homeFolder = tempFolder.newFolder("home");
     m2Folder = tempFolder.newFolder("m2");
     gradleProps = new File(homeFolder.getPath() + "/gradle.properties");
