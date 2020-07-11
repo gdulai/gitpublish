@@ -20,7 +20,7 @@ dependencies {
     implementation group: 'org.apache.maven.shared', name: 'maven-invoker', version: '3.0.1'
     implementation group: 'org.eclipse.jgit', name: 'org.eclipse.jgit', version: '5.6.0.201912101111-r'
 
-    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
 }
 
 def pluginId = 'hu.gdulai.gitpublish'

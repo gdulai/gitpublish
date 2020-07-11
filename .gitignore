@@ -1,3 +1,44 @@
-/.gradle/
-/.idea/
-/build/
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/    
+target/
+bin/
+
+### Gradle ###
+.gradle/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+node_modules/
+
+### VS Code ###
+.vscode/
+
+### Uknown files ###
+package-lock.json
+package.json
+webpack.config.js
+webpack.generated.js
