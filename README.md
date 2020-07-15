@@ -16,11 +16,11 @@ Set up mavenLocalRepo as a gradle property.
         ]
     }
 ##### Behaviour:
-* In case of maven based project if the plugin does not find a  mave wrapper it uses $MAVEN_HOME or $M2_HOME
-* In case of maven project set the $JAVA_HOME system env
+* In case of maven based project if the plugin does not find a  mave wrapper it uses $MAVEN_HOME or $M2_HOME.
+* In case of maven project set the $JAVA_HOME system env.
 
-##### Known issues:
-* SSH based authentication does not work yet
+##### Tips:
+* Do not forget to put ssh:// before ssh urls.
 
 
 
