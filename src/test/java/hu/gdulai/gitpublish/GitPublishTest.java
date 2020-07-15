@@ -47,4 +47,28 @@ public class GitPublishTest {
     assertThat(junitName).isEqualTo("junit");
     assertThat(exampleGradleProjectName).isEqualTo("example-gradle-project");
   }
+
+  @Test
+  public void testSshJmdb() throws IOException {
+    // GIVEN
+    setup = new TestSetup("test_jmdb.gradle");
+
+    // WHEN
+    setup.gradle(true, "-Dgradle.user.home=" + setup.homeFolder().getPath(), "gitPublish");
+
+    // THEN
+    Optional<File> folderO = setup.gitPublishFolder();
+    assertThat(folderO).isNotEmpty();
+
+    File folder = folderO.get();
+    assertThat(folder.isDirectory()).isTrue();
+
+    File[] files = folder.listFiles();
+    assertThat(files).isNotNull();
+    assertThat(files).isNotEmpty();
+    assertThat(files).hasSize(1);
+
+    String jdmb = files[0].getName();
+    assertThat(jdmb).isEqualTo("jmdb");
+  }
 }
