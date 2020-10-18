@@ -22,12 +22,12 @@ repositories {
 gitPublish {
     shouldKeep = true
     repositories = [
-            ["jmdb", "git@gitlab.com:gdulai/jmdb.git"]
+            ["git@gitlab.com:gdulai/jmdb.git"]
     ]
 }
 
 dependencies {
-    implementation group: 'hu.gdulai', name: 'example-gradle-project', version: '1.0-SNAPSHOT'
+    implementation group: 'hu.gdulai', name: 'jmdb', version: '1.0'
 
     testImplementation group: 'junit', name: 'junit', version: '4.12'
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.15.1-SNAPSHOT'
