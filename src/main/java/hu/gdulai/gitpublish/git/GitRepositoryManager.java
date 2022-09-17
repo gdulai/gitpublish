@@ -67,7 +67,7 @@ public class GitRepositoryManager {
           });
     }
 
-    cloneCmd.setURI(url).setDirectory(localCopy).setBranch("master").call();
+    cloneCmd.setURI(url).setDirectory(localCopy).setBranch("main").call();
 
     return localCopy;
   }
